@@ -1,0 +1,121 @@
+*{
+  
+    font-size: 32px;
+  }
+  /* this is the information for the photo for the background and color for the lettering */
+  body{
+    background-color: rgb(237, 237, 243);
+    margin: 0;
+    background-image: url(./../Photos/debugging.jpg);
+    width: 100%;
+    background-size: 85%;
+    background-repeat: no-repeat;
+    background-color: black;
+    
+  }
+  a{
+    text-decoration: none;
+  }
+  
+  a:visited{
+    color: white;
+  }
+  a:hover{
+    color: rgb(247, 171, 218);
+  }
+  a:link{
+    color: white;
+  }
+  
+  .flexy{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(231, 52, 216);
+    border-bottom: 2px solid;
+    padding: 20px;
+  
+  
+  }
+  .name{
+    justify-content: flex-start;
+    color: white;
+    display: flex;
+    margin: 10px;
+  }
+  .black{
+    color: rgb(243, 240, 240);
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px;
+  }
+  .horizontal{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+   /* this is for my houver property so when you mouse over my name it shows what ever icon i put in quotes */ 
+  }
+  .flexy .name:hover::after{
+    font-size: 24px;
+    content:"0️⃣" "0️⃣" "0️⃣" "0️⃣" "0️⃣" "1️⃣";
+    margin-right: 3px;
+  }
+  .contact{
+    margin: 10px;
+    color: rgb(4, 4, 4);
+    font-size: 32px;
+    display: flex;
+    justify-content: flex-start
+
+}
+.card{
+    flex-direction: column;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color:transparent;
+    padding: 30px;
+    margin: 0px;
+    width: 100%;
+    border: 5px solid;
+    /* margin-right: 5%; dont need this margin */
+    border-bottom: 2px solid;
+}
+/* this allows the screen to be smaller and opened on a phone with out messing up the picture format or word format  */
+@media screen and (max-width: 960px){
+
+}
+
+
+  .content{ 
+  flex-direction: column;
+align-items: left; 
+  }
+  footer {
+    display: flex;
+    justify-content: center;
+    transform: scale(45px);
+    padding: 30px;
+    clear: both;
+    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+    text-align: center;
+    position: relative;
+    bottom: 5px;
+    margin-top: 37%;
+    font-size: 64px;
+    
+  }
+  .github {
+    display: flex;
+    justify-content: center;
+    transform: scale(2);
+    color: black;
+    font-size: 64px;
+    margin-left: 2%;
+  }
+  
+  .github:hover {
+    color: rgb(236, 63, 199);
+    font-size: 35px;
+  }

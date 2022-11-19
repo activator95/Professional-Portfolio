@@ -1,0 +1,193 @@
+*{
+  
+  font-size: 32px;
+}
+body{
+  background-color: rgb(237, 237, 243);
+  margin: 0;
+  background-image: url(./../Photos/wallpaper.png);
+  width: 100%;
+  background-size: cover;
+  
+}
+
+a{
+  text-decoration: none;
+}
+
+a:visited{
+  color: white;
+}
+a:hover{
+  color: pink;
+}
+a:link{
+  color: white;
+}
+
+.flexy{
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(231, 52, 216);
+  border-bottom: 2px solid;
+  padding: 20px;
+
+
+}
+.name{
+  justify-content: flex-start;
+  color: rgb(235, 232, 232);
+  display: flex;
+  margin: 10px;
+}
+.black{
+  color: rgb(243, 239, 239);
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px;
+}
+.horizontal{
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  
+}
+.flexy .name:hover::after{
+  font-size: 24px;
+  content:"🤓";
+  margin-right: 3px;
+}
+/* this is my card for my picture and about me  */
+.center{
+  color: black;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.card{
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: grey;
+  padding: 100px;
+  margin: 20px;
+  width: 50%;
+  border: 5px solid;
+  margin-right: 5%;
+}
+.card img{
+  width: 30%;
+min-width: 20%;
+margin-right: 5%;
+object-fit: contain;
+
+
+}
+/* this is for the text inside the about box */
+.myinfo{
+  display: flex;
+justify-content: flex-start;
+flex-direction: row;
+justify-content: flex-start;
+font-size: 25px;
+
+}
+.content{
+  display: flex;
+  justify-content: center;
+  
+
+}
+.myinfo > .pinkUni{
+  color: pink;
+  font-size: 25px;
+}
+
+
+/* dicided to add seprate pages to go to content link */
+
+/* .side{
+  display: flex;
+  background-color: rgb(130, 119, 128);
+  margin: 4%;
+  width: 30%;
+  border:5px solid;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  line-height: 125%;
+
+} */
+
+
+@media screen and (max-width: 960px)
+{
+.card img{
+  width:100%
+
+}
+
+
+
+  .myinfo{
+  flex-direction:column;
+}
+}
+@media screen and (max-width: 960px){
+
+
+  .content{ 
+  flex-direction: column;
+align-items: left; 
+
+  } 
+  .side{
+  width: 60%;
+  }
+}
+footer {
+  display: flex;
+  justify-content: center;
+  transform: scale(45px);
+  padding: 30px;
+  clear: both;
+  /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+  text-align: center;
+  position: relative;
+  bottom: 5px;
+  margin-top: 17%;
+  font-size: 64px;
+  
+}
+
+/* footer h2 {
+  font-size: 20px;
+} */
+/* changed this becasue i want  the page to open into a new window*/
+/* .rightside{
+  display: flex;
+  background-color: rgb(130, 119, 128);
+  margin: 4%;
+  width: 30%;
+  border: 5px solid; 
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  line-height: 125%;
+} */
+.github {
+  display: flex;
+  justify-content: center;
+  transform: scale(2);
+  color: black;
+  font-size: 64px;
+  margin-left: 2%;
+}
+
+.github:hover {
+  color: rgb(241, 68, 215);
+  font-size: 35px;
+}
